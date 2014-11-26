@@ -60,7 +60,7 @@ Here's a nice example color palette for an app:
 <!-- Accent Color -->
 <div class="accent pink lighten-1"></div>
 ```
-While the above isn't **technically** correct regarding Material, it's easier to implement, is a little more elegant, and is pretty close anyways. If you want to get exact, you can always just use the SCSS variables:
+While the above isn't _technically_ correct regarding Material, it's easier to implement, is a little more elegant, and is pretty close anyways. If you want to get exact, you can always just use the SCSS variables:
 
 ```SCSS
 //Primary Color Palette

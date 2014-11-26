@@ -2,4 +2,35 @@
 
 #forkme_banner {
 	background-color: $pink-A200;
+	z-index: 99;
+
+	-webkit-box-shadow: 0px 0px 10px 4px $indigo-800;
+	-moz-box-shadow: 0px 0px 10px 4px $indigo-800;
+	box-shadow: 0px 0px 10px 4px $indigo-800;
+}
+
+#main_content_wrap {
+	padding-top: 40px;
+	z-index: 0;
+}
+
+#header_wrap,
+#footer_wrap {
+	position: relative;
+	z-index: 98;
+
+	-webkit-box-shadow: 0px 0px 10px 4px $grey-700;
+	-moz-box-shadow: 0px 0px 10px 4px $grey-700;
+	box-shadow: 0px 0px 10px 4px $grey-700;
+}
+
+.outer {
+	position: relative;
+	z-index: 98;
+}
+
+.outer, pre {
+	-webkit-box-shadow: 0px 0px 5px 1px $grey-500;
+	-moz-box-shadow: 0px 0px 5px 1px $grey-500;
+	box-shadow: 0px 0px 5px 1px $grey-500;
 }

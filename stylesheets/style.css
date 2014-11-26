@@ -879,6 +879,31 @@
   color: #fff; }
 
 #forkme_banner {
-  background-color: #FF4081; }
+  background-color: #FF4081;
+  z-index: 99;
+  -webkit-box-shadow: 0px 0px 10px 4px #283593;
+  -moz-box-shadow: 0px 0px 10px 4px #283593;
+  box-shadow: 0px 0px 10px 4px #283593; }
+
+#main_content_wrap {
+  padding-top: 40px;
+  z-index: 0; }
+
+#header_wrap,
+#footer_wrap {
+  position: relative;
+  z-index: 98;
+  -webkit-box-shadow: 0px 0px 10px 4px #616161;
+  -moz-box-shadow: 0px 0px 10px 4px #616161;
+  box-shadow: 0px 0px 10px 4px #616161; }
+
+.outer {
+  position: relative;
+  z-index: 98; }
+
+.outer, pre {
+  -webkit-box-shadow: 0px 0px 5px 1px #9E9E9E;
+  -moz-box-shadow: 0px 0px 5px 1px #9E9E9E;
+  box-shadow: 0px 0px 5px 1px #9E9E9E; }
 
 /*# sourceMappingURL=style.css.map */
