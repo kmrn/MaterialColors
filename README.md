@@ -32,6 +32,11 @@ Then you can go up or down by using "lighten" or "darken":
 <div class="bar blue-grey darken-2"></div>
 ```
 
+The HTML method applies the background-color property to an element. If you're trying to apply the color to text (use sparingly, it doesn't really fit with the Material theme) just add "-text" to the end of the color's name.
+```HTML
+<div class="foo orange-text"></div>
+```
+
 After moving the file into your project, just include it with a quick,
 ```SCSS
 @include "material-colors";
