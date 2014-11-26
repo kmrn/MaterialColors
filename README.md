@@ -9,7 +9,7 @@ What it does mainly is take all of the colors from http://google.com/design/spec
 
 
 You can call them in two different ways:
-```HTML5
+```HTML
 <div class="foo red"></div>
 ```
 or in SCSS
@@ -23,11 +23,11 @@ So for example, if I wanted use that neat blue-grey color, all I have to do is s
 $blue-grey-500
 ```
 Or I could easily just add the "blue-grey" class to the element:
-```HTML5
+```HTML
 <div class="foo blue-grey"></div>
 ```
 Then you can go up or down by using "lighten" or "darken":
-```HTML5
+```HTML
 <div class="foo blue-grey lighten-2"></div>
 <div class="bar blue-grey darken-2"></div>
 ```
