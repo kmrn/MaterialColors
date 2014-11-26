@@ -3,7 +3,7 @@ MaterialColors
 
 **A Sass partial for all of Google's Material color palette.**
 
-##You can see a working demo here: http://ron953.github.io/MaterialColors/
+##[Here's a working demo.](http://ron953.github.io/MaterialColors/)
 
 Liking the colors encouraged by Google's new design spec? It's pretty tough to remember any of those hex codes though. This Sass partial makes it easy though.
 
