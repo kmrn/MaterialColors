@@ -1,14 +1,115 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>MaterialColors Example</title>
-	<link rel="stylesheet" style="text/css" href="style.css">
-</head>
-<body>
-	<h1>The Material Color Palette</h1>
-	<h2>In your project</h2>
-	<div class="foo red"></div>
-	<div class="foo blue-grey darken-2"></div>
-	<div class="foo orange lighten-3"></div>
-</body>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Materialcolors : A Sass partial for all of Google&#39;s Material color palette.">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Materialcolors</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/ron953/MaterialColors">View on GitHub</a>
+
+          <h1 id="project_title">Materialcolors</h1>
+          <h2 id="project_tagline">A Sass partial for all of Google&#39;s Material color palette.</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/ron953/MaterialColors/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/ron953/MaterialColors/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="materialcolors" class="anchor" href="#materialcolors" aria-hidden="true"><span class="octicon octicon-link"></span></a>MaterialColors</h1>
+
+<h3>
+<a id="a-sass-partial-for-all-of-googles-material-color-palette" class="anchor" href="#a-sass-partial-for-all-of-googles-material-color-palette" aria-hidden="true"><span class="octicon octicon-link"></span></a>A Sass partial for all of Google's Material color palette.</h3>
+
+<p>Liking the colors encouraged by Google's new design spec? It's pretty tough to remember any of those hex codes though. This Sass partial makes it easy though.</p>
+
+<p>What it does mainly is take all of the colors from <a href="http://google.com/design/spec/style/color.html">http://google.com/design/spec/style/color.html</a> and assigns them all to SCSS variables and classes. Pretty simple stuff.</p>
+
+<p>You can call them in two different ways:</p>
+
+<div class="highlight highlight-HTML"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>foo red<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>or in SCSS</p>
+
+<div class="highlight highlight-SCSS"><pre>$[color]-[hue]
+</pre></div>
+
+<p>So for example, if I wanted use that neat blue-grey color, all I have to do is say:</p>
+
+<div class="highlight highlight-SCSS"><pre><span class="pl-vo">$blue-grey-500</span></pre></div>
+
+<p>Or I could easily just add the <code>blue-grey</code> class to the element:</p>
+
+<div class="highlight highlight-HTML"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>foo blue-grey<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>Then you can go up or down by using <code>lighten</code> or <code>darken</code>:</p>
+
+<div class="highlight highlight-HTML"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>foo blue-grey lighten-2<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>bar blue-grey darken-2<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>The HTML method applies the background-color property to an element. If you're trying to apply the color to text (use sparingly, it doesn't really fit with the Material theme) just add <code>-text</code> to the end of the color's name.</p>
+
+<div class="highlight highlight-HTML"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>foo orange-text<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>After moving the file into your project, just include it with a quick,</p>
+
+<div class="highlight highlight-SCSS"><pre><span class="pl-k">@include</span> <span class="pl-s1"><span class="pl-pds">"</span>material-colors<span class="pl-pds">"</span></span>;</pre></div>
+
+<h1></h1>
+
+<p>Coming up with good color palettes for Material apps is easy!</p>
+
+<p>Just jam together about three different hues from one color palette and pair them with one accent color from a color's secondary palette (A100, A200, A400, A700). That's all there is too it.</p>
+
+<p>Here's a nice example color palette for an app:</p>
+
+<div class="highlight highlight-HTML"><pre><span class="pl-c">&lt;!-- Primary Color Palette --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>foo indigo<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>bar indigo lighten-4<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>baz indigo darken-2<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+
+<span class="pl-c">&lt;!-- Accent Color --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>accent pink lighten-1<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p>While the above isn't <strong>technically</strong> correct regarding Material, it's easier to implement, is a little more elegant, and is pretty close anyways. If you want to get exact, you can always just use the SCSS variables:</p>
+
+<div class="highlight highlight-SCSS"><pre><span class="pl-c">//Primary Color Palette</span>
+<span class="pl-e">.foo</span> { <span class="pl-mp"><span class="pl-s3">background-color</span></span>: <span class="pl-vo">$indigo-500</span>; }
+<span class="pl-e">.bar</span> { <span class="pl-mp"><span class="pl-s3">background-color</span></span>: <span class="pl-vo">$indigo-100</span>; }
+<span class="pl-e">.baz</span> { <span class="pl-mp"><span class="pl-s3">background-color</span></span>: <span class="pl-vo">$indigo-700</span>; }
+
+<span class="pl-c">//Accent Color</span>
+<span class="pl-e">.accent</span> { <span class="pl-mp"><span class="pl-s3">background-color</span></span>: <span class="pl-vo">$pink-A200</span>; }</pre></div>
+
+<p>It's really up to you which way you want to go with that.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Materialcolors maintained by <a href="https://github.com/ron953">ron953</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
 </html>
