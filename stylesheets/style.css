@@ -878,8 +878,7 @@
 .white-text {
   color: #fff; }
 
-.foo {
-  height: 300px;
-  width: 300px; }
+#forkme_banner {
+  background-color: #FF4081; }
 
 /*# sourceMappingURL=style.css.map */
