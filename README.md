@@ -20,12 +20,8 @@ So for example, if I wanted use that neat blue-grey color, all I have to do is s
 ```SCSS
 $blue-grey-500
 ```
-
 ==============
-Coming up with good color palettes with Material is easy!
+Coming up with good color palettes for Material apps is easy!
 
-Just jam together about three different 
-
-==============
-_material-colors.scss also comes with a few helpful mixins!
+Just jam together about three different hues from one color palette and pair them with one accent color from a color's secondary palette (A100, A200, A400, A700). That's all there is too it.
 
