@@ -20,6 +20,11 @@ So for example, if I wanted use that neat blue-grey color, all I have to do is s
 ```SCSS
 $blue-grey-500
 ```
+
+After moving the file into your project, just include it with a quick,
+```SCSS
+@include "material-colors";
+```
 ==============
 Coming up with good color palettes for Material apps is easy!
 
